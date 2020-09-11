@@ -34,12 +34,24 @@ npm run dev
 
 ## Add Sqlite3
 
-npm or yarn add sqlite3 knex
+```bash
+npm install sqlite3 knex
+```
 
-# Adicione o scripts "postinstall":"electron-builder install-app-deps"
+or
 
-rode o script depois adiciona a seguinte linha no webpack do electron
-externals: { sqlite3: 'commonjs sqlite3', knex: 'commonjs knex' },
+```bash
+yarn add sqlite3 knex
+```
+
+### Add script to rebuild sqlite4
+
+Add in the package.json scripts
+"postinstall":"electron-builder install-app-deps"
+
+#### run the script then add the following line to the electron webpack
+
+externals : {sqlite3: 'commonjs sqlite3', knex: 'commonjs knex'},
 
 ## Packaging
 
