@@ -44,7 +44,7 @@ or
 yarn add sqlite3 knex
 ```
 
-### Add script to rebuild sqlite4
+### Add script to rebuild sqlite3
 
 Add in the package.json scripts
 "postinstall":"electron-builder install-app-deps"
